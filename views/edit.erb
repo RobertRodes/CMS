@@ -1,0 +1,12 @@
+<form action="/<%= @name %>/edit" method="post">
+  <div>
+    <label class="info" for="text">Editing <%= @name %></label>
+  </div>
+  <div>
+    <textarea name="text"><%= @file %></textarea>
+  </div>
+  <fieldset>
+    <input type="submit" name="save" value="Save" />
+    <input type="submit" name="cancel" value="Cancel" />
+  </fieldset>
+</form>

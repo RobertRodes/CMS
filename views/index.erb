@@ -1,0 +1,23 @@
+<ul>
+  <% @files.each do |file| %>
+    <li>
+      <a href="/<%= file %>"><%= file %></a>
+      <a href="/<%= file %>/edit">Edit</a>
+      <form action="/<%= file %>/delete" method="post">
+        <button type="submit">Delete</></button> 
+      </form>
+    </li>
+  <% end %>
+</ul>  
+<a href="/new">New Document</a>
+<div>
+  <label class="info">Signed <%= @username ? "in as '#{@username}'." : 'out.'%></label>
+  <form class="inline" action="/users/signin" <%= 'style="display:none"' if @username %> method="get">
+    <button type="submit">Sign In</button> 
+  </form>
+  <form class="inline" action="/users/signout" <%= 'style="display:none"' unless @username %> method="post">
+    <button type="submit">Sign Out</button> 
+  </form>
+</div>
+
+<button style="display:none;" onclick="alert('<%=session[:username]%>');">test</button>

@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title><%= @title %></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans">
+  </head>
+  <body>
+    <% @file.each do |line| %>
+      <%= line %> <br>
+    <% end %>
+  </body>
+</html>
+

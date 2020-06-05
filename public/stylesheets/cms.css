@@ -1,0 +1,46 @@
+body {
+  padding: 1em;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+form.inline {
+  display: inline;
+  padding: 0 20px;
+}
+
+li a:first-child {
+  width: 120px;
+}
+
+li a, li form {
+  width: 50px;
+  display: inline-block;
+}
+
+label.info {
+  font-style: italic;
+  font-size: .9em;
+}
+
+label.inline-input {
+  width: 100px;
+  display: inline-block;
+}
+
+div {
+  padding: 10px 0;
+}
+
+.message {
+  padding: 10px;
+  background: #FFFF99;
+  font-size: .9em;
+}
+
+textarea {
+  width: 600px;
+  height: 400px;
+  font-size: 1em;
+  font-family: "IBM Plex Sans";
+  padding: 10px;
+}
